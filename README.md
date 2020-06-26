@@ -36,3 +36,9 @@ contenedor a partir de la imagen generada:
 ```
 
 -------------------------------------------------------------------------------
+
+**Aplicación corriendo en el puerto 4444:**
+
+![Screenshot PostmanCall](screenshots/postman-movies-get-endpoint.png)
+
+-------------------------------------------------------------------------------
