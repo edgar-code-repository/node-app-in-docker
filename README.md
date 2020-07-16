@@ -37,8 +37,32 @@ contenedor a partir de la imagen generada:
 
 -------------------------------------------------------------------------------
 
-**Aplicación corriendo en el puerto 4444:**
+**Ejecucion de endpoint que recupera movies en Postman:**
 
-![Screenshot PostmanCall](screenshots/postman-movies-get-endpoint.png)
+![Screenshot GetMovies](screenshots/node-get-movies.png)
+
+-------------------------------------------------------------------------------
+
+**Ejecucion de endpoint que recupera movie by id en Postman:**
+
+![Screenshot GetMovieById](screenshots/node-get-movie-by-id.png)
+
+-------------------------------------------------------------------------------
+
+**Ejecucion de endpoint que agrega movie en Postman:**
+
+![Screenshot PostMovie](screenshots/node-add-movie.png)
+
+-------------------------------------------------------------------------------
+
+**Ejecucion de endpoint que actualiza movie en Postman:**
+
+![Screenshot PutMovie](screenshots/node-update-movie.png)
+
+-------------------------------------------------------------------------------
+
+**Ejecucion de endpoint que elimina movie en Postman:**
+
+![Screenshot DeleteMovie](screenshots/node-delete-movie.png)
 
 -------------------------------------------------------------------------------

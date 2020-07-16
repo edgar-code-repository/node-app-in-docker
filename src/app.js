@@ -10,7 +10,7 @@ app.listen(4444, () => {
 
 app.use(body_parser.json());
 
-var moviesArray = [
+let moviesArray = [
     { id:uuid.v4(), name:"Star Wars", year:1977 },
     { id:uuid.v4(), name:"Alien", year:1979 },
     { id:uuid.v4(), name:"Blade Runner", year:1982 }
@@ -56,12 +56,8 @@ app.put("/api/movies/:id", (req, res) => {
     const movie = req.body;
     movie.id = movieId;
  
-    let moviesUpdatedList = [];
-    moviesArray.forEach(oldItem => oldItem.id == movieId ? moviesUpdatedList.push(movie) : moviesUpdatedList.push(oldItem));
- 
-    moviesArray = [...moviesUpdatedList];
+    moviesArray = moviesArray.map(oldItem => oldItem.id === movieId ? movie : oldItem);
     res.json(movie);
-
 });
 
 app.delete("/api/movies/:id", (req, res) => {
